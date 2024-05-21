@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Importa a folha de estilos
+import './App.css';
 
 const App: React.FC = () => {
   const [name, setName] = useState('');
@@ -9,7 +9,6 @@ const App: React.FC = () => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     console.log('Form data:', { name, email, phone });
-    // Aqui você pode adicionar a lógica para enviar os dados do formulário
   };
 
   return (
